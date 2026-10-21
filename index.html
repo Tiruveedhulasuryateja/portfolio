@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Surya Teja Tiruveedhula — Software Engineer specialising in .NET/WPF applications, RF & ATE software, and instrument-control systems for aerospace and defence." />
+  <meta name="author" content="Surya Teja Tiruveedhula" />
+  <title>Surya Teja Tiruveedhula | Software Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2322d3ee'/><stop offset='1' stop-color='%238b5cf6'/></linearGradient></defs><rect width='100' height='100' rx='22' fill='%23070b14'/><text x='50' y='68' font-family='Arial,sans-serif' font-size='48' font-weight='bold' fill='url(%23g)' text-anchor='middle'>ST</text></svg>" />
+</head>
+<body>
+  <!-- Ambient background -->
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="orb orb-1" aria-hidden="true"></div>
+  <div class="orb orb-2" aria-hidden="true"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="site-header" id="siteHeader">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a href="#home" class="logo" aria-label="Home">
+        <span class="logo-mark">ST</span>
+        <span class="logo-text">Surya<span class="accent-dot">.</span></span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="hero-eyebrow reveal">
+            <span class="pulse-dot"></span> Open to opportunities · Hyderabad, India
+          </p>
+
+          <h1 class="hero-title reveal">
+            Hi, I'm <span class="gradient-text">Surya Teja</span><br />
+            Tiruveedhula
+          </h1>
+
+          <p class="hero-role reveal">
+            <span class="role-prefix">&lt;</span>
+            <span id="typedRole" class="typed-role"></span><span class="caret">|</span>
+            <span class="role-suffix">/&gt;</span>
+          </p>
+
+          <p class="hero-desc reveal">
+            Software Engineer building mission-critical desktop applications, RF test automation,
+            and instrument-control software for aerospace and defence programmes — from SDR test
+            equipment for the Indian Air Force to telemetry acquisition for BrahMos.
+          </p>
+
+          <div class="hero-actions reveal">
+            <a href="#projects" class="btn btn-primary">
+              View My Work
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="assets/resume.pdf" class="btn btn-ghost" download>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              Download Resume
+            </a>
+          </div>
+
+          <div class="hero-social reveal">
+            <a href="https://www.linkedin.com/in/suryatejatiruveedhula-3a04901bb/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            </a>
+            <a href="mailto:suryatejatiruveedhula03@gmail.com" aria-label="Email">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            </a>
+            <a href="tel:+919392317010" aria-label="Phone">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="terminal-title">profile.js — developer</span>
+            </div>
+            <pre class="terminal-body" aria-label="Developer profile snippet"><code><span class="c-comment">// who am I?</span>
+<span class="c-key">const</span> <span class="c-var">engineer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">"Surya Teja Tiruveedhula"</span>,
+  <span class="c-prop">role</span>: <span class="c-str">"Software Engineer"</span>,
+  <span class="c-prop">company</span>: <span class="c-str">"Pinaka Aerospace"</span>,
+  <span class="c-prop">stack</span>: [<span class="c-str">"C#"</span>, <span class="c-str">".NET"</span>, <span class="c-str">"WPF"</span>,
+           <span class="c-str">"Python"</span>, <span class="c-str">"SQL"</span>],
+  <span class="c-prop">domain</span>: <span class="c-str">"Aerospace &amp; Defence"</span>,
+  <span class="c-prop">focus</span>: <span class="c-str">"RF / ATE / Instrument Control"</span>,
+  <span class="c-prop">mission</span>: <span class="c-str">"Engineer systems that can't fail"</span>
+};</code></pre>
+          </div>
+
+          <div class="float-chip chip-1">
+            <span class="chip-icon">⚡</span> RF Test Automation
+          </div>
+          <div class="float-chip chip-2">
+            <span class="chip-icon">🛰️</span> Defence Systems
+          </div>
+          <div class="float-chip chip-3">
+            <span class="chip-icon">🧠</span> CSE · AI, VIT
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-hint" aria-label="Scroll to About">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">01 — About</span>
+          <h2>Engineering software that <span class="gradient-text">defends nations</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a Software Engineer with <strong>2+ years of experience</strong> designing and building
+              desktop applications, automated test equipment (ATE), and instrument-control software for
+              India's aerospace and defence programmes. My work spans the full lifecycle — requirement
+              analysis, GUI development, hardware–software integration, verification, and technical documentation.
+            </p>
+            <p>
+              At <strong>Pinaka Aerospace</strong> I develop test systems for the
+              <strong>Indian Air Force, DRDO (DLRL &amp; DEAL), HAL, and BrahMos</strong>; earlier at
+              <strong>Astra Microwave</strong> I built an equipment controller managing 11+ instruments
+              with PDW/TDOA analysis, and at <strong>Advantum Health</strong> I automated healthcare
+              credentialing workflows.
+            </p>
+            <p>
+              I care about clean architecture, reliable communication protocols, and interfaces that make
+              complex RF systems feel simple. I'm a <strong>VIT (CSE–AI) graduate</strong>, an IEEE/IETE
+              student-chapter lead, and a Smart India Hackathon 2023 participant.
+            </p>
+
+            <ul class="quick-facts">
+              <li><span>📍</span> Hyderabad, India</li>
+              <li><span>🎯</span> .NET / WPF / RF Test Systems</li>
+              <li><span>🎓</span> B.E. CSE (AI), VIT — 8.9 CGPA</li>
+              <li><span>🗣️</span> English, Telugu, Hindi</li>
+            </ul>
+          </div>
+
+          <div class="stats-grid reveal">
+            <div class="stat-card">
+              <span class="stat-number" data-count="2" data-suffix="+">0</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="10" data-suffix="+">0</span>
+              <span class="stat-label">Projects Delivered</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="6" data-suffix="">0</span>
+              <span class="stat-label">Defence Programmes</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number" data-count="8.9" data-decimals="1">0</span>
+              <span class="stat-label">B.E. CGPA</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">02 — Skills</span>
+          <h2>Tools of the <span class="gradient-text">trade</span></h2>
+          <p class="section-sub">A full-stack of engineering software, instrument control, and data analysis.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Programming</h3>
+            <div class="tags">
+              <span>C#</span><span>C++</span><span>Python</span><span>JavaScript</span><span>HTML</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>Frameworks &amp; GUI</h3>
+            <div class="tags">
+              <span>.NET</span><span>WPF</span><span>XAML</span><span>ASP.NET</span><span>Blazor</span><span>Qt/QML</span><span>Flask</span><span>MVVM</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <h3>Databases</h3>
+            <div class="tags">
+              <span>SQL</span><span>MSSQL</span><span>PostgreSQL</span><span>pgAdmin</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            </div>
+            <h3>Instrument Control</h3>
+            <div class="tags">
+              <span>TCP/IP</span><span>SCPI</span><span>VISA</span><span>LAN Comm</span><span>DDC Bus</span><span>MIL-STD-1553B</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg>
+            </div>
+            <h3>Data &amp; Analysis</h3>
+            <div class="tags">
+              <span>OxyPlot</span><span>Tableau</span><span>MATLAB</span><span>PDW Visualization</span><span>TDOA / DF</span><span>RFTMS</span>
+            </div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3>Tools &amp; Platforms</h3>
+            <div class="tags">
+              <span>Visual Studio</span><span>VS Code</span><span>Git</span><span>Wireshark</span><span>STK</span><span>Cisco Packet Tracer</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="skills-extra reveal">
+          <span class="extra-label">Also experienced in</span>
+          <span>MESG</span><span>Pulse Building</span><span>Keysight Expert</span><span>SIMVIEW Z9500</span><span>IQ Tools</span><span>Automated Test Equipment</span><span>Telemetry Acquisition</span><span>Hardware–Software Integration</span><span>Technical Documentation</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">03 — Experience</span>
+          <h2>Where I've <span class="gradient-text">built things</span></h2>
+          <p class="section-sub">Click a role to explore the programmes and projects.</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Pinaka Aerospace -->
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div class="job-card open" data-accordion>
+              <button class="job-head" aria-expanded="true">
+                <div class="job-title-wrap">
+                  <h3>Software Engineer</h3>
+                  <p class="job-company">Pinaka Aerospace <span>· Hyderabad, India</span></p>
+                </div>
+                <div class="job-meta">
+                  <span class="job-period">Nov 2025 – Present</span>
+                  <span class="job-count">7 programmes</span>
+                  <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+              </button>
+              <div class="job-body">
+                <div class="job-body-inner">
+                  <ul class="project-list">
+                    <li>
+                      <strong>SDR ATE — Indian Air Force</strong>
+                      <p>Developed GUI functionalities for SDR-based automated test equipment: radio configuration, communication interfaces, and automated test-case execution. Supported requirement analysis, verification, debugging, and SRS/SDD/UML documentation.</p>
+                    </li>
+                    <li>
+                      <strong>4-Port Coherent Signal Generator — DLRL, DRDO</strong>
+                      <p>Built software for multi-channel coherent signal generation with configurable time delays and time/phase/amplitude calibration for RF/EW simulation and payload testing. Authored SRS/SDD/UML docs and calibration procedures; authorised ITAR Keysight access holder.</p>
+                    </li>
+                    <li>
+                      <strong>RF Test &amp; Measurement Systems — DEAL, DRDO</strong>
+                      <p>Contributed to RF test-system software, instrument communication, and measurement workflows. Prepared SRS, SOP, SDD, command descriptions, and test procedures.</p>
+                    </li>
+                    <li>
+                      <strong>PDW Telemetry Station — BrahMos</strong>
+                      <p>Integrated telemetry acquisition for Ka-band and Ku-band PDW applications supporting DF/TDOA evaluation. Coordinated integration with Navy stakeholders and interface verification.</p>
+                    </li>
+                    <li>
+                      <strong>Su-30MKI IRST / IDMG UUT Test System — HAL</strong>
+                      <p>Analysed requirements and modified GUI/maintenance functionality for IRST/IDMG UUT testing, covering MFD interfaces, MIL-STD-1553B, ARINC 818, and STANAG requirements. Prepared technical proposals and pre-bid documentation.</p>
+                    </li>
+                    <li>
+                      <strong>Radome Controller &amp; Seeker Acquisition — DLRL, ELSEC</strong>
+                      <p>Developed a radome-controller GUI with Custom and Radiation modes supporting servo-controlled testing, VNA trace acquisition, and phase measurement analysis across angular positions.</p>
+                    </li>
+                    <li>
+                      <strong>Technical Proposals &amp; Customer Coordination</strong>
+                      <p>Represented engineering in defence-sector pre-bid meetings with DRDO and HAL; prepared proposals, compliance inputs, scope clarifications, and BOQ inputs for tender submissions.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Astra Microwave -->
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div class="job-card" data-accordion>
+              <button class="job-head" aria-expanded="false">
+                <div class="job-title-wrap">
+                  <h3>Software Engineer</h3>
+                  <p class="job-company">Astra Microwave Products Ltd <span>· Hyderabad, India</span></p>
+                </div>
+                <div class="job-meta">
+                  <span class="job-period">Jun 2024 – Nov 2025</span>
+                  <span class="job-count">2 programmes</span>
+                  <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+              </button>
+              <div class="job-body">
+                <div class="job-body-inner">
+                  <ul class="project-list">
+                    <li>
+                      <strong>Checkout System — Equipment Controller, DDC &amp; PDW/TDOA</strong>
+                      <p>Developed Equipment Controller GUI modules to configure, control, and monitor 11+ equipment units. Integrated DDC cards and bus communication for raw packet acquisition, MESG APIs, and SQL-based authentication, logging, and test traceability. Built PDW visualisation enabling TDOA/DF analysis across 500+ emitter scenarios, with LEO/GEO visibility assessments.</p>
+                    </li>
+                    <li>
+                      <strong>ANVESHA — SSPA Control &amp; RF System Integration</strong>
+                      <p>Developed SSPA control and RF test-operation functionality, integrating signal-generation and measurement systems, with system testing, troubleshooting, and documentation.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Advantum -->
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div class="job-card" data-accordion>
+              <button class="job-head" aria-expanded="false">
+                <div class="job-title-wrap">
+                  <h3>Data Analyst</h3>
+                  <p class="job-company">Advantum Health <span>· Hyderabad, India</span></p>
+                </div>
+                <div class="job-meta">
+                  <span class="job-period">Jan 2024 – Jun 2024</span>
+                  <span class="job-count">Healthcare</span>
+                  <svg class="chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+                </div>
+              </button>
+              <div class="job-body">
+                <div class="job-body-inner">
+                  <ul class="project-list">
+                    <li>
+                      <strong>Provider Credentialing Automation</strong>
+                      <p>Built automated workflows for managing provider profiles in CAQH databases, ensuring credentialing compliance. Created backend validation for DEA and CDS licences, reducing manual review time and rejection rates. Managed the US healthcare provider website and databases.</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">04 — Projects</span>
+          <h2>Selected <span class="gradient-text">work</span></h2>
+          <p class="section-sub">Systems deployed across India's defence and aerospace ecosystem.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-badge">Indian Air Force</span>
+              <svg class="project-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </div>
+            <h3>SDR Automated Test Equipment</h3>
+            <p>GUI-driven test platform for software-defined radios — radio configuration, communication interfaces, and automated test-case execution with full verification documentation.</p>
+            <div class="tags"><span>C#</span><span>WPF</span><span>.NET</span><span>SDR</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-badge">DLRL · DRDO</span>
+              <svg class="project-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </div>
+            <h3>4-Port Coherent Signal Generator</h3>
+            <p>Multi-channel coherent signal generation with configurable delays and time/phase/amplitude calibration for RF/EW simulation and payload testing.</p>
+            <div class="tags"><span>RF</span><span>Calibration</span><span>Instrument Control</span><span>SCPI</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-badge">BrahMos</span>
+              <svg class="project-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </div>
+            <h3>PDW Telemetry Station</h3>
+            <p>Ka/Ku-band telemetry data acquisition and Pulse Descriptor Word analysis, supporting Direction Finding and TDOA evaluation with Navy stakeholders.</p>
+            <div class="tags"><span>Telemetry</span><span>PDW</span><span>TDOA / DF</span><span>Data Analysis</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-badge">Astra Microwave</span>
+              <svg class="project-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </div>
+            <h3>Equipment Controller &amp; Checkout System</h3>
+            <p>Central control for 11+ instruments with DDC bus acquisition, SQL traceability, and PDW visualisation across 500+ emitter scenarios with LEO/GEO satellite visibility analysis.</p>
+            <div class="tags"><span>C#</span><span>SQL</span><span>DDC Bus</span><span>MESG API</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-badge">HAL</span>
+              <svg class="project-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </div>
+            <h3>Su-30MKI IRST / IDMG Test System</h3>
+            <p>UUT test-system software covering MFD interfaces and MIL-STD-1553B, ARINC 818, and STANAG communication requirements, with proposal and pre-bid support.</p>
+            <div class="tags"><span>MIL-STD-1553B</span><span>ARINC 818</span><span>WPF</span><span>STANAG</span></div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-top">
+              <span class="project-badge">DLRL · ELSEC</span>
+              <svg class="project-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M7 7h10v10"/></svg>
+            </div>
+            <h3>Radome Controller &amp; Seeker Testing</h3>
+            <p>Custom/Radiation-mode radome controller GUI with servo-controlled testing, VNA trace acquisition, and phase-measurement analysis across angular positions.</p>
+            <div class="tags"><span>WPF</span><span>VNA</span><span>RF Test</span><span>Servo Control</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION + CERTS ============ -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">05 — Education &amp; Credentials</span>
+          <h2>Foundations &amp; <span class="gradient-text">recognition</span></h2>
+        </div>
+
+        <div class="edu-grid">
+          <div class="edu-card reveal">
+            <div class="edu-icon">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5"/></svg>
+            </div>
+            <div class="edu-content">
+              <span class="edu-period">Sep 2020 – Jul 2024</span>
+              <h3>Vellore Institute of Technology (VIT)</h3>
+              <p class="edu-degree">B.E. in Computer Science &amp; Engineering — Artificial Intelligence</p>
+              <p class="edu-score">CGPA: <strong>8.9 / 10</strong></p>
+            </div>
+          </div>
+
+          <div class="edu-side">
+            <div class="mini-card reveal">
+              <span class="mini-label">Intermediate</span>
+              <strong>Ratnam Junior College</strong>
+              <span class="mini-score">CGPA 9.5 · 2018–2020</span>
+            </div>
+            <div class="mini-card reveal">
+              <span class="mini-label">10th Grade</span>
+              <strong>Sri Chaitanya</strong>
+              <span class="mini-score">CGPA 9.8 · 2017–18</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="credentials-grid">
+          <div class="cred-card reveal">
+            <h3 class="cred-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5"/></svg>
+              Certifications
+            </h3>
+            <ul class="cred-list">
+              <li><span>ASP.NET for Engineers</span><em>Coursera</em></li>
+              <li><span>Blockchain Developer</span><em>NASSCOM</em></li>
+              <li><span>Java Programming: Solving Problems with Software</span><em>Duke University</em></li>
+              <li><span>Data Analytics &amp; Visualization with PostgreSQL</span><em>Udemy</em></li>
+              <li><span>Tableau — Data Visualization</span><em>Smart Bridge</em></li>
+              <li><span>C# WPF for Beginners</span><em>Coursera</em></li>
+              <li><span>RF Instrument Signals &amp; Systems</span><em>Keysight Conference</em></li>
+              <li><span>Signal Waveform Generator &amp; API Usage</span><em>RnS</em></li>
+            </ul>
+          </div>
+
+          <div class="cred-card reveal">
+            <h3 class="cred-title">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              Honours &amp; Awards
+            </h3>
+            <ul class="award-list">
+              <li>
+                <strong>Token of Appreciation — DLRL, ELSEC</strong>
+                <p>Recognised for excellence in UI development for system control, presented in the presence of Tri-Services dignitaries.</p>
+              </li>
+              <li>
+                <strong>Secure System Design Acknowledgement</strong>
+                <p>Acknowledged for excellence in secure system design and real-time payload management used in national defence operations.</p>
+              </li>
+              <li>
+                <strong>Smart India Hackathon 2023</strong>
+                <p>Recognised for innovative problem-solving at a national-level competition.</p>
+              </li>
+              <li>
+                <strong>Smart Baby Cradle — VIT Innovation Clinic 2024</strong>
+                <p>Selected from 600+ entries and acquired by a cradle company.</p>
+              </li>
+              <li>
+                <strong>IEEE &amp; IETE Lead Coordinator</strong>
+                <p>Led student chapters and organised 63+ technical events and hackathons.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">06 — Contact</span>
+          <h2>Let's build something <span class="gradient-text">that matters</span></h2>
+          <p class="section-sub">Have a role, project, or idea in mind? My inbox is always open.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <a class="contact-card" href="mailto:suryatejatiruveedhula03@gmail.com">
+              <span class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              </span>
+              <span class="contact-label">Email</span>
+              <span class="contact-value">suryatejatiruveedhula03@gmail.com</span>
+            </a>
+
+            <a class="contact-card" href="tel:+919392317010">
+              <span class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </span>
+              <span class="contact-label">Phone</span>
+              <span class="contact-value">+91 93923 17010</span>
+            </a>
+
+            <a class="contact-card" href="https://www.linkedin.com/in/suryatejatiruveedhula-3a04901bb/" target="_blank" rel="noopener">
+              <span class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+              </span>
+              <span class="contact-label">LinkedIn</span>
+              <span class="contact-value">in/suryatejatiruveedhula</span>
+            </a>
+
+            <div class="contact-card static">
+              <span class="contact-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Hyderabad, India</span>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Your name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Doe" required />
+              </div>
+              <div class="field">
+                <label for="email">Your email</label>
+                <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+              </div>
+            </div>
+            <div class="field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Opportunity / Collaboration" required />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or role…" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Send Message
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <p class="form-note" id="formNote" role="status" aria-live="polite">
+              This opens your email app with the message pre-filled.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark">ST</span>
+        <span class="logo-text">Surya<span class="accent-dot">.</span></span>
+      </a>
+      <p class="footer-copy">
+        © <span id="year"></span> Surya Teja Tiruveedhula · Built with HTML, CSS &amp; JavaScript.
+      </p>
+      <div class="footer-social">
+        <a href="https://www.linkedin.com/in/suryatejatiruveedhula-3a04901bb/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="mailto:suryatejatiruveedhula03@gmail.com" aria-label="Email">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
