@@ -1608,3 +1608,96 @@ a.contact-card:hover {
     transform: none;
   }
 }
+
+/* Profile photo above the developer terminal */
+.profile-photo-wrap {
+  position: relative;
+  width: 180px;
+  margin: 0 auto 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  z-index: 2;
+}
+
+.profile-photo-glow {
+  position: absolute;
+  top: -12px;
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #22d3ee, #8b5cf6);
+  filter: blur(35px);
+  opacity: 0.35;
+  z-index: -1;
+}
+
+.profile-photo {
+  width: 145px;
+  height: 145px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  background:
+    linear-gradient(#0b1020, #0b1020) padding-box,
+    linear-gradient(135deg, #22d3ee, #8b5cf6) border-box;
+  box-shadow: 0 0 30px rgba(34, 211, 238, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-photo:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 0 35px rgba(139, 92, 246, 0.3);
+}
+
+.profile-photo-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 12px;
+  background: rgba(15, 23, 42, 0.85);
+  backdrop-filter: blur(12px);
+  white-space: nowrap;
+}
+
+.profile-photo-info strong,
+.profile-photo-info span {
+  display: block;
+}
+
+.profile-photo-info strong {
+  color: #e5e7eb;
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+
+.profile-photo-info div span {
+  color: #94a3b8;
+  font-size: 11px;
+}
+
+.profile-status-dot {
+  width: 9px;
+  height: 9px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 10px rgba(52, 211, 153, 0.6);
+}
+
+/* Keep the profile section responsive */
+@media (max-width: 768px) {
+  .profile-photo-wrap {
+    margin-bottom: 28px;
+  }
+
+  .profile-photo {
+    width: 125px;
+    height: 125px;
+  }
+}
+
