@@ -4,7 +4,7 @@ Personal portfolio website built with pure **HTML, CSS, and JavaScript** (no fra
 
 ## Live Site
 
-Once deployed: `https://<your-username>.github.io/portfolio/`
+**https://tiruveedhulasuryateja.github.io/portfolio/**
 
 ## Sections
 
