@@ -1701,3 +1701,72 @@ a.contact-card:hover {
   }
 }
 
+/* Right-side hero layout */
+.hero-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 0;
+  gap: 20px;
+}
+
+/* Profile image and details */
+.profile-photo-wrap {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 8px;
+}
+
+.profile-photo {
+  display: block;
+  width: 135px;
+  height: 135px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  border: 3px solid #22d3ee;
+  box-shadow: 0 0 25px rgba(34, 211, 238, 0.2);
+}
+
+.profile-photo-info {
+  position: relative;
+  z-index: 6;
+  max-width: 100%;
+  white-space: normal;
+}
+
+/* Prevent terminal content from creating horizontal scrolling */
+.terminal {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+}
+
+.terminal-body {
+  max-width: 100%;
+  overflow-x: auto;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .hero-visual {
+    width: 100%;
+  }
+
+  .profile-photo {
+    width: 115px;
+    height: 115px;
+  }
+
+  .profile-photo-info {
+    white-space: normal;
+    text-align: center;
+  }
+}
+
